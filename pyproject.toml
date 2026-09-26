@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marfa"
+version = "3.0.0"
+description = "MARFA: Molecular atmospheric Absorption with Rapid and Flexible Analysis"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+authors = [
+    { name = "Osama" },
+    { name = "Mikhail Razumovskiy" },
+    { name = "Boris Fomin" },
+    { name = "Denis Astanin" },
+]
+keywords = ["atmospheric", "spectroscopy", "absorption", "HITRAN", "radiative-transfer"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+dependencies = [
+    "numpy>=1.16",
+    "scipy>=1.2",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.0"]
+dev  = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/yourname/MARFA_PY_SIMPLE"
+Reference = "https://arxiv.org/abs/2411.03418"
+
+[project.scripts]
+marfa = "marfa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["marfa", "marfa.*"]
+
+[tool.setuptools.package-data]
+marfa = ["data/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

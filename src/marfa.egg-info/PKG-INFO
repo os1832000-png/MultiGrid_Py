@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: marfa
+Version: 3.0.0
+Summary: MARFA: Molecular atmospheric Absorption with Rapid and Flexible Analysis
+Home-page: https://github.com/yourname/MARFA_PY_SIMPLE
+Author: Osama
+Author-email: osama18@example.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: dev
+Provides-Extra: plot
