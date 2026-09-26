@@ -1,3 +1,36 @@
-src/__pycache__
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
 
-examples/__pycache__
+# Packaging / build artefacts
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheelhouse/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local / experimental
+.legacy/
+*.nbc
+*.nbi
+*.par
+!tests/data/*.par
