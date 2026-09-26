@@ -34,3 +34,5 @@ Thumbs.db
 *.nbi
 *.par
 !tests/data/*.par
+examples/
+data/
