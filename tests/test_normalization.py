@@ -1,6 +1,6 @@
 """Tests that line shape integrals equal 1."""
 import numpy as np
-from marfa.line_shapes import LineShapes
+from multigrid.line_shapes import LineShapes
 
 
 def test_voigt_integral_is_one():

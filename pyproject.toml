@@ -3,7 +3,7 @@ requires = ["setuptools>=40.8.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "marfa"
+name = "multigrid-py"
 version = "3.0.0"
 description = "MARFA: Molecular atmospheric Absorption with Rapid and Flexible Analysis"
 readme = "README.md"
@@ -37,14 +37,14 @@ Homepage = "https://github.com/yourname/MARFA_PY_SIMPLE"
 Reference = "https://arxiv.org/abs/2411.03418"
 
 [project.scripts]
-marfa = "marfa.cli:main"
+multigrid = "multigrid.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["marfa", "marfa.*"]
+include = ["multigrid", "multigrid.*"]
 
 [tool.setuptools.package-data]
-marfa = ["data/**/*"]
+multigrid = ["data/**/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

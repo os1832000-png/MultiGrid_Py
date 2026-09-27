@@ -1,7 +1,7 @@
 """Core MARFA engine sanity checks."""
 import numpy as np
-from marfa import MARFA
-from marfa.hitran import SpectralLine
+from multigrid import MARFA
+from multigrid.hitran import SpectralLine
 
 
 def _one_line(mol=2, nu=2000.0, S=1e-20,

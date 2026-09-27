@@ -1,7 +1,7 @@
 """Optional plotting helpers.
 
 Requires matplotlib.  matplotlib is imported lazily inside each function
-so that ``import marfa`` never pulls it in.
+so that ``import multigrid`` never pulls it in.
 """
 from typing import Optional
 

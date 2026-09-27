@@ -1,7 +1,7 @@
 """HITRAN reader tests using a synthetic line."""
 import tempfile
 import os
-from marfa.hitran import HITRANReader, SpectralLine
+from multigrid.hitran import HITRANReader, SpectralLine
 
 
 def _make_par_line(mol=2, iso=1, nu=2000.0, S=1e-20,

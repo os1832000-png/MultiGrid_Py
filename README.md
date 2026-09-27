@@ -45,7 +45,7 @@ pip install --user -e ".[plot]"
 Quick start
 python
 import numpy as np
-from marfa import MARFA, HITRANReader
+from multigrid import MARFA, HITRANReader
 
 # 1. Load CO2 lines from a HITRAN .par file
 lines = HITRANReader.read_par_file(
@@ -75,7 +75,7 @@ bash
 python3 examples/co2_basic.py /path/to/CO2.par
 Plotting (optional)
 python
-from marfa.plotting import plot_spectrum
+from multigrid.plotting import plot_spectrum
 
 plot_spectrum(
     nu, alpha,
@@ -83,18 +83,18 @@ plot_spectrum(
     filename="co2_spectrum.png",
 )
 matplotlib is imported lazily, inside plot_spectrum. A plain
-import marfa never loads matplotlib.
+import multigrid never loads matplotlib.
 
 Command line
 bash
-python3 -m marfa.cli CO2.par --mol 2 --nu-min 2300 --nu-max 2400 \
+python3 -m multigrid.cli CO2.par --mol 2 --nu-min 2300 --nu-max 2400 \
     --T 296 --P 1.0 --vmr 400e-6 -o co2_spectrum.npz
 The output .npz file contains nu and alpha arrays.
 
 Get help with:
 
 bash
-python3 -m marfa.cli --help
+python3 -m multigrid.cli --help
 Public API
 Class / function	Purpose
 MARFA	Main calculation engine
