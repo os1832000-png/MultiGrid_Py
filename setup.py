@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="multigrid-py",
-    version="3.0.0",
-    description="MARFA: Molecular atmospheric Absorption with Rapid and Flexible Analysis",
-    url="https://github.com/yourname/MARFA_PY_SIMPLE",
-    author="Osama",
-    author_email="osama18@example.com",
+    name="multigrid_py",
+    version="3.0.2",
+    description="Python port of the Fortran MARFA line-by-line molecular absorption code",
+    url="https://github.com/os1832000-png/MultiGrid_Py",
     license="MIT",
+    author="Osama M. M. Abdellatif",
+    author_email="osama1832000@gmail.com",
     package_dir={"": "src"},
     packages=find_packages(where="src", include=["multigrid", "multigrid.*"]),
     python_requires=">=3.6",

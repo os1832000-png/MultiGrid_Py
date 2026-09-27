@@ -18,7 +18,7 @@ from .profiles import AtmosphericProfile
 from .pt_table import PTTableGenerator
 from ._warnings import MarfaWarning, LineOutOfRangeWarning, InputFileWarning
 
-__version__ = "3.0.0"
+__version__ = "3.0.2"
 __all__ = [
     "Constants",
     "MOLECULE_NAMES", "MOLECULAR_MASSES",
